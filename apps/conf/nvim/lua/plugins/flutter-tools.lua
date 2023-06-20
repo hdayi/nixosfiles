@@ -35,7 +35,7 @@ return {
           end,
         },
         -- flutter_path = "/Users/hacidayi/dev/flutter/bin/flutter", -- <-- this takes priority over the lookup
-        -- flutter_path = "/home/hdayi/dev/flutter/bin/flutter", -- <-- this takes priority over the lookup
+        flutter_path = "/home/hdayi/.nix-profile/bin/flutter", -- <-- this takes priority over the lookup
         flutter_lookup_cmd = nil, -- example "dirname $(which flutter)" or "asdf where flutter"
         fvm = false, -- takes priority over path, uses <workspace>/.fvm/flutter_sdk if enabled
         widget_guides = {

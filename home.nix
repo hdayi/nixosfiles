@@ -3,6 +3,7 @@
 {
   imports = [
     ./apps/zsh.nix
+    ./apps/tmux.nix
     ./apps/nvim.nix
   ];
   nixpkgs.config.allowUnfree = true;
