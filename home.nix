@@ -36,9 +36,13 @@
     kitty
     nerdfonts
     tmux
+
+
+    #mobile
     android-studio
     android-tools
     flutter
+    jdk11
 
 
     #diller
