@@ -8,3 +8,4 @@ sudo ln -s ~/.config/home-manager/hardware-configuration.nix /etc/nixos/hardware
 #git setup
 git config --global user.email "hdayi@hotmail"
 git config --global user.name "HACI DAYI"
+git config --global credential.helper store
