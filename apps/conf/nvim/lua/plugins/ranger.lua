@@ -1,0 +1,1 @@
+return { "francoiscabrol/ranger.vim" }
