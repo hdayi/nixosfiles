@@ -5,6 +5,7 @@
     ./apps/zsh.nix
     ./apps/nvim.nix
   ];
+  nixpkgs.config.allowUnfree = true;
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "hdayi";
@@ -24,8 +25,18 @@
   # environment.
   home.packages = with pkgs; [
     htop
+    tldr
+    bat
+    gdu
+    hollywood
+    ranger
+    exa
     git
+    kitty
+    nerdfonts
+    tmux
     android-studio
+    android-tools
     flutter
 
 

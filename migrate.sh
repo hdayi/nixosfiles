@@ -1,9 +1,15 @@
 #!env bash
 ln -s ~/.config/home-manager/apps/conf/nvim ~/.config/nvim
 sudo mv /etc/nixos/configuration.nix /etc/nixos/configuration.nix.old
-sudo mv /etc/nixos/hardware-configuration.nix /etc/nixos/hardware-configuration.nix.old
+#link calismiyor flake yapmak lazim
 sudo ln -s ~/.config/home-manager/configuration.nix /etc/nixos/configuration.nix
-sudo ln -s ~/.config/home-manager/hardware-configuration.nix /etc/nixos/hardware-configuration.nix
+
+##system setup
+sudo nixos-rebuild switch
+sudo nix-channel --add https://github.com/nix-community/home-manager/archive/release-23.05.tar.gz home-manager
+sudo nix-channel --update
+sudo nix-shell '<home-manager>' -A install
+home-manager switch
 
 #git setup
 git config --global user.email "hdayi@hotmail"
